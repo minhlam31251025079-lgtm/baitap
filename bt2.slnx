@@ -2,4 +2,5 @@
   <Project Path="bt2/bt2.csproj" />
   <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="4959d810-efed-45ac-bfd3-16444b408dc7" />
   <Project Path="ConsoleApp2/ConsoleApp2.csproj" Id="46bd1ea9-c8bc-4b25-b446-23126656dc01" />
+  <Project Path="ConsoleApp3/ConsoleApp3.csproj" Id="f1f15c04-86c8-4e4e-a222-3d1d2349ea22" />
 </Solution>
