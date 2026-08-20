@@ -1,14 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace bt2
 {
     internal class bt22
     {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("nhap so a:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("nhap so b:");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int temp = a;
+            a = b;
+            b = temp;
+            Console.WriteLine($"sau khi hoan doi: a = {a}, b = {b}");
+        }
     }
 }
-Console.WriteLine("nhap so a:");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("nhao so b:");
-int b = Convert.ToInt32(Console.ReadLine());
