@@ -1,7 +1,7 @@
 ﻿using System;
 namespace bt2
 {
-    internal class bt22
+    internal class bt2bai2
     {
         static void Main(string[] args)
         {

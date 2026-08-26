@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿
+
+Console.WriteLine("Hello, World!");
 Console.WriteLine("nhap so thu nhat:");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("nhap so thu hai:");

@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace bai3bai2.cs
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("nhap ban kinh hinh cau (r):");
+            double r = double.Parse(Console.ReadLine());
+            if (r <= 0)
+            {
+                Console.WriteLine("ban kinh phai lon hon 0!");
+                return;
+            }
+            double surfaceArea = 4*Math.PI*Math.Pow(r,2);
+            double volume = (4.0 / 3.0) * Math.PI * Math.Pow(r, 3);
+            Console.WriteLine($"dien tich be mat la: {surfaceArea:F2}");
+            Console.WriteLine($"the tich hinh cau la: {volume:F2}");
+            Console.ReadKey();  
+        }
+    }
+}
