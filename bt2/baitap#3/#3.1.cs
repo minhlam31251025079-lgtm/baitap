@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace bai_tap.baitapslidebuoi3
-{
-    internal class bt3bai1
+
+
+
+
+{ 
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -17,8 +17,7 @@ namespace bai_tap.baitapslidebuoi3
                 Console.WriteLine($"{num} là số chẵn.");
             else
                 Console.WriteLine($"{num} là số lẻ.");
-
-
         }
     }
 }
+
