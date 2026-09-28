@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF38213A-6D59-4711-B7EC-CE2E8B8245A1}</ProjectGuid>
+    <ProjectGuid>{8B8D974B-DDC7-4E85-96C9-DF04CE7792C5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>bt2</RootNamespace>
-    <AssemblyName>bt2</AssemblyName>
+    <RootNamespace>toantu3so</RootNamespace>
+    <AssemblyName>toantu3so</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../bangcuuchuong/bangcuuchuong.csproj" />
+  <Project Path="../dowhile/dowhile.csproj" />
+  <Project Path="../nhapvaosontubanphim/nhapvaosontubanphim.csproj" />
+  <Project Path="../vonglap/vonglap.csproj" />
+  <Project Path="switchcase.csproj" />
+</Solution>
