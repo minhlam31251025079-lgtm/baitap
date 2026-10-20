@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
-{
-    internal class bt8
-    {
-        using System;
+    
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -295,6 +290,37 @@ namespace BaiTap8
             int[][] cot = new int[36][];
             for (int k = 0; k < 36; k++)
             {
-                int n = k < 26 ? cnt[0, k] : cnt[1, k
+                int n = k < 26 ? cnt[0, k] : cnt[1, k - 26];
+                dong[k] = new int[n];
+                cot[k] = new int[n];
+            }
+
+            int[] vt = new int[36];
+            for (int i = 0; i < lines.Length; i++)
+            {
+                for (int j = 0; j < lines[i].Length; j++)
+                {
+                    int k = Idx(lines[i][j]);
+                    if (k < 0) continue;
+                    dong[k][vt[k]] = i + 1;
+                    cot[k][vt[k]] = j + 1;
+                    vt[k]++;
+                }
+            }
+
+            Console.WriteLine("Nội dung file:");
+            foreach (string l in lines)
+                Console.WriteLine("  " + l);
+
+            Console.WriteLine("\nKý tự | Số lần | Vị trí (dòng,cột)");
+            for (int k = 0; k < 36; k++)
+            {
+                if (dong[k].Length == 0) continue;
+                var vitri = dong[k].Select((d, t) => "(" + d + "," + cot[k][t] + ")");
+                Console.WriteLine("  " + TenKyTu(k) + "   |   " + dong[k].Length + "   | " + string.Join(" ", vitri));
+            }
+            Console.WriteLine("\n(Chữ cái không phân biệt hoa/thường)");
+        }
     }
 }
+
